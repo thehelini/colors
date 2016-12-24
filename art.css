@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+#box1 {
+  width: 600px;
+  height:600px;
+  background-color: #FFEEDF;
+  position: absolute;
+}
+
+#box2 {
+  height: 400px;
+  width: 400px;
+  background-color: #222e50;
+  position: absolute;
+}
+
+#box3 {
+  width: 200px;
+  height: 200px;
+  background-color: #533745;
+  float: right;
+  position: absolute;
+}
+
+.borderClass {
+  border-width: 3px;
+  border-style: dotted;
+  border-color: white;
+}
