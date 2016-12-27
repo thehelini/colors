@@ -3,12 +3,28 @@ var divArray = [];
 var highestIndex = divArray.length;
 
 //links
-$("#box2").dblclick (function () {
-    window.location.href = "./quotes.html";
+$("#box1").dblclick (function () {
+    window.location.href = "./redquotes.html";
   });
 
-$("#box1").dblclick (function () {
-    window.location.href = "./quotes.html#deweyquote";
+$("#box2").dblclick (function () {
+    window.location.href = "./redquotes.html#giverquote";
+  });
+
+$("#box3").dblclick (function () {
+    window.location.href = "./redquotes.html#roadquote";
+  });
+
+$("#box4").dblclick (function () {
+    window.location.href = "./redquotes.html#belovedquote";
+  });
+
+$("#box5").dblclick (function () {
+    window.location.href = "./redquotes.html#gatsbyquote";
+  });
+
+$("#box6").dblclick (function () {
+    window.location.href = "./redquotes.html#cleaningquote";
   });
 
 //interactive
@@ -16,11 +32,11 @@ $(".box").each(function () {
     divArray.push($(this));
 });
 
-$(".box").mousedown (function divOnTop () {
-    var one = 1;
-    $(this).css("zIndex", highestIndex+one);
-    highestIndex = highestIndex + one;
-});
+// $(".box").mousedown (function divOnTop () {
+//     var one = 1;
+//     $(this).css("zIndex", highestIndex + one);
+//     highestIndex = highestIndex + one;
+// });
 
 $(".box").mouseover (function addBorder () {
     $(this).addClass("borderClass");
@@ -33,12 +49,14 @@ $(".box").mouseout (function removeBorder () {
 //functions
 function drag() {
     for (var i = 0; i<divArray.length; i++) {
-      divArray[i].draggable();
+      divArray[i].draggable({
+        stack: "div",
+        distance: 0});
   };
 };
 
 function generateRandom() {
-    var num = Math.floor(Math.random()*80);
+    var num = Math.floor(Math.random()*70);
     return num;
 };
 

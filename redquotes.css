@@ -1,8 +1,9 @@
-/* Reset */
+/*reset*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,83 +53,59 @@ table {
   box-sizing: border-box;
 }
 
-a {
-  color: black;
-}
-
-body {
-  line-height: 1.35em;
-}
-
-h1 {
-  font-size: 200%;
-  font-weight: bold;
-  margin-bottom: 3vh;
-}
-
-/* Sidebar */
-/*.button {
-  float: right;
-}*/
-
-/* On Colors */
-.about {
-  font-family: Arial;
-  margin: 3vh 1vw;
-  /*margin: auto;*/
-  width: 50vw;
-}
-
 /* Boxes */
-#box1 {
+#hassbox {
   background-color: #FF1700;
-  height: 400px;
-  position: absolute;
-  width: 400px;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  width: 600px;
 }
 
-#box2 {
+#giverbox,
+#belovedbox,
+#roadbox,
+#gatsbybox,
+#cleaningbox {
+  height: 600px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  width: 600px;
+}
+
+/* Box Colors*/
+#giverbox {
   background-color: #E51500;
-  float: right;
-  height: 300px;
-  position: absolute;
-  width: 300px;
 }
 
-#box3 {
+#roadbox {
   background-color: #7F0B00;
-  float: right;
-  height: 200px;
-  position: absolute;
-  width: 200px;
 }
 
-#box4 {
+#belovedbox {
   background-color: #BF1100;
-  float: right;
-  height: 400px;
-  position: absolute;
-  width: 600px;
 }
 
-#box5 {
+#gatsbybox {
   background-color: #FF8667;
-  float: right;
-  height: 200px;
-  position: absolute;
-  width: 400px;
 }
 
-#box6 {
+#cleaningbox {
   background-color: #FFDACC;
-  height:600px;
-  position: absolute;
-  width: 600px;
 }
 
-/* JavaScript */
-.borderClass {
-  border-color: white;
-  border-style: dotted;
-  border-width: 3px;
+/* Qoutes */
+#hass,
+#giver,
+#beloved,
+#road,
+#gatsby,
+#cleaning {
+  color: white;
+  font-family: "Arapey", serif;
+  font-size: 140%;
+  padding: 5px 15px;
+  width: 350px;
 }
